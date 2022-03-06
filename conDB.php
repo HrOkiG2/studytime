@@ -23,9 +23,10 @@ class myDB{
         $dsn      = 'mysql:dbname=study;host=localhost;charset=utf8mb4';
         $user     = 'root';
         $password = 'root';
+        $option   = [PDO::ATTR_EMULATE_PREPARES=>false];
 
         // DBへ接続
-        $db = new PDO($dsn, $user, $password);
+        $db = new PDO($dsn, $user, $password,$option);
         try{
             return $db;
         }catch(PDOException $e){
