@@ -5,13 +5,17 @@
     $de = new dataEditing();
     $result = $de->selectDB();
 ?>
-<p>
-    <?php
-        foreach($result as $rr){
-            foreach($rr as $a => $z){
-                echo $z;
-            }
-            echo "<br>";
-        }
-    ?>
-</p>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>生涯独学</title>
+        <script src="sTime.js"></script>
+    </head> 
+    
+    <body>
+        <h2>今日の勉強時間</h2>
+        <p id="endtime"></p>
+        
+    </body>
+</html>

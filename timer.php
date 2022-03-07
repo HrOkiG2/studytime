@@ -1,6 +1,5 @@
 <?php    
     $contents = $_POST["study"];
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,12 +18,13 @@
             <p>勉強を終了する</p>
             <p>
                 <form action="studyEnd.php" method="POST">
-                    <button type="submit" name="end" value="end">終了</button>
+                    <button type="submit" name="end" value="end" onclick="stopInterval();">終了</button>
                 </form></form>
             </p>
         </div>
-
+        
         <!-- JS -->
-        <script src="sTime.js"></script>
+        <script src="./start.js" type="module"></script>
+
     </body>
 </html>
