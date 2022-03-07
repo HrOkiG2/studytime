@@ -10,6 +10,12 @@ function timerAdd() {
     if (s > 9) {
         s = s.slice(-2);
     }
+    if (m > 9) {
+        m = m.slice(-2);
+    }
+    if (h > 9) {
+        h = h.slice(-2);
+    }
 
     let result = h + ":" + m + ":" + s;
     console.log(result);
